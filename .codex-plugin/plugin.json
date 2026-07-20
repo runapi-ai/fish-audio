@@ -1,0 +1,10 @@
+{
+  "name": "fish-audio",
+  "version": "0.1.0",
+  "description": "RunAPI Fish Audio skill for speech generation across coding agents",
+  "skills": [
+    {
+      "path": "skills/fish-audio/SKILL.md"
+    }
+  ]
+}
