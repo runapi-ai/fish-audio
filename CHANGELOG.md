@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.2.1](https://github.com/runapi-ai/fish-audio/releases/tag/v0.2.1) - 2026-08-10
+
+### Changed
+- Complete marketplace distribution for the RunAPI Fish Audio skill.
+
+
 ## [v0.2.0](https://github.com/runapi-ai/fish-audio/releases/tag/v0.2.0) - 2026-08-07
 
 ### Added
