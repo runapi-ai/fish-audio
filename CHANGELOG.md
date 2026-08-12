@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.2.2](https://github.com/runapi-ai/fish-audio/releases/tag/v0.2.2) - 2026-08-12
+
+### Changed
+- Generate the fish-audio skill from the shared RunAPI recipe with contract-discovered request rules and task behavior, direct local media inputs, complete result verification, and bounded recovery.
+
+
 ## [v0.2.1](https://github.com/runapi-ai/fish-audio/releases/tag/v0.2.1) - 2026-08-10
 
 ### Changed
