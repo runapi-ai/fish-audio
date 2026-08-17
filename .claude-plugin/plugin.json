@@ -1,7 +1,7 @@
 {
   "name": "fish-audio",
-  "version": "0.2.2",
-  "description": "RunAPI Fish Audio skill for speech generation across coding agents",
+  "version": "0.3.0",
+  "description": "RunAPI Fish Audio skill for account-owned voice resources and speech generation across coding agents",
   "skills": [
     {
       "path": "skills/fish-audio/SKILL.md"

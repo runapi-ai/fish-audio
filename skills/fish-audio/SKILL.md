@@ -1,6 +1,6 @@
 ---
 name: fish-audio
-description: "Generate MP3 or WAV speech with Fish Audio through RunAPI. Use for one-off speech generation or application integration. Prefer the RunAPI CLI for one-off requests and the target-language SDK for production integration."
+description: "Create account-owned Fish Audio voice resources, attempt to reuse their IDs, or generate MP3/WAV speech through RunAPI. Use for voice resource management, one-off speech generation, or application integration. Prefer the RunAPI CLI for one-off requests and the target-language SDK for production integration."
 documentation: https://runapi.ai/models/fish-audio.md
 provider_page: https://runapi.ai/providers/fish-audio.md
 catalog: https://runapi.ai/models.md
@@ -49,6 +49,12 @@ Create `request.json` as valid JSON using only fields accepted by the discovered
 Traverse nested objects and arrays before execution. Close every relationship stated by the discovered contract, including uniqueness constraints and cross-references between nested values.
 
 For a discovered local media input, including file-typed fields and top-level media URL fields, put an agent-readable local file path directly in `request.json`. The CLI consumes file fields as declared and uploads local paths in top-level media URL fields. Use `runapi files create` only when the user needs a reusable URL, provides Base64, or the discovered contract explicitly requires a separate upload.
+
+Semantic invariants:
+- For voice resources, select `create-voice`, `list-voices`, or `get-voice` from service help. Create requires `name` and `source_audio_url`; get requires the RunAPI `voice_id`; list accepts optional `page_number` and `page_size`.
+- Use a voice only after its state is `trained`; a returned `voice_id` is a best-effort reference and may stop working later.
+- The `references` accepted by `text-to-speech` apply only to the current request; they do not create a voice resource.
+- This version has no update, delete, revoke, or voice-library management operations. Do not assume a voice ID remains available or make claims about how source audio is used for training.
 
 Validate the file before sending it:
 
