@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.4.0](https://github.com/runapi-ai/fish-audio/releases/tag/v0.4.0) - 2026-08-21
+
+### Added
+- Document account-owned voice creation, list and get workflows, readiness checks, and speech reuse.
+
+
 ## [v0.3.0](https://github.com/runapi-ai/fish-audio/releases/tag/v0.3.0) - 2026-08-17
 
 ### Added
