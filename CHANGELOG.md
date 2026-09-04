@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.4.1](https://github.com/runapi-ai/fish-audio/releases/tag/v0.4.1) - 2026-09-04
+
+### Changed
+- Document terminal responses, 202 acceptance, and Task Result continuation for supported capabilities.
+
+
 ## [v0.4.0](https://github.com/runapi-ai/fish-audio/releases/tag/v0.4.0) - 2026-08-21
 
 ### Added
